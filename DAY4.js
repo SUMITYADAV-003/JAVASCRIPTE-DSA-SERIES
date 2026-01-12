@@ -77,14 +77,76 @@ let prompt = require("prompt-sync")();
 
 
 // Q Abundant Number 
- let n = Number(prompt("Enter Your number : -"));
- let sum = 0;
- for(let i = 1; i<n; i++){
-    if(n % i == 0) {
-      sum += i
-      console.log(sum);
-    }
- } 
- if(sum > n ) console.log("Abundant Number");
- else console.log(" Not Abundant Number");
+//  let n = Number(prompt("Enter Your number : -"));
+//  let sum = 0;
+//  for(let i = 1; i<n; i++){
+//     if(n % i == 0) {
+//       sum += i
+//       console.log(sum);
+//     }
+//  } 
+//  if(sum > n ) console.log("Abundant Number");
+//  else console.log(" Not Abundant Number");
+
+// Q Print the Factors a Number :-
+
+// let n = Number(prompt("Enter Your Number:"));
+// if(n == 0 || n == 1) console.log(" IT Is  Not Prime Number : -");
+// let count = 0
+
+// for(let i = 2; i<=n/2; i++ ){
+//   if(n % i == 0) count ++;
+// }
+//  if(count == 0) console.log("Prime Number")
+// else console.log(" Not Prime Number : -")
+
+// Q Guess the Number :-
+// let comput = Math.floor((Math.random() * 100) + 1);
+// let user , attempt;
+// do {
+//   attempt ++;
+//   user = Number(prompt("Enter A  number  Between 1 and  100: "));
+//   if(user > comput) console.log("to larger");
+//   else if(user  < comput) console.log(" too small");
+//   else if(user ==  comput) {
+//     console.log('Congratulation You are Guessed Number Correctly ' + attempt);
+//   } else console.log("Invalid Number :-");
+// } while(user != comput);
+
+//  Q Sasta Calculator
+console.log("Enter 1 for addition");
+console.log("Enter 2 for  Sub");
+console.log("Enter 3 for  mul");
+console.log("Enter 4 for  div");
+console.log("Enter 5 for  modulr");
+n = Number(prompt("Enter Your Number :-"));
+switch(n){
+  case 1:
+    let a = Number(prompt("Enter Your Number " ));
+    let b = Number(prompt("Enter Your Number " ));
+    console.log("Your addition of two number is  :-" , a + b);
+    break;
+  case 2:
+    let c = Number(prompt("Enter Your Number " ));
+    let d = Number(prompt("Enter Your Number " ));
+    console.log("Your sub of two number is  :-" , c - d);
+    break;
+  case 3:
+    let e = Number(prompt("Enter Your Number " ));
+    let f = Number(prompt("Enter Your Number " ));
+    console.log("Your multi of two number is  :-" , a * b);
+    break;
+  case 4:
+    let g = Number(prompt("Enter Your Number " ));
+    let h = Number(prompt("Enter Your Number " ));
+    console.log("Your div of two number is  :-" , g / h);
+    break;
+  case 5:
+    let g1 = Number(prompt("Enter Your Number " ));
+    let h1 = Number(prompt("Enter Your Number " ));
+    console.log("Your div of two number is  :-" , g % h);
+    break;
+  default:
+    console.log("Invalid Number :-")  
+}
 
