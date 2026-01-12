@@ -173,9 +173,10 @@ let prompt = require("prompt-sync")();
 //   if(count == 0) console.log("Prime number");
 //   else console.log(" Not Prime Number");
 // }
-let n = 5;
-let f = 1;
-for(let i = 1; i<=n; i++){
-     f *= i;
-  console.log(` fact  ${i} = ${f} `);
-}
+// let n = 5;
+// let f = 1;
+// for(let i = 1; i<=n; i++){
+//      f *= i;
+//   console.log(` fact  ${i} = ${f} `);
+// }
+
