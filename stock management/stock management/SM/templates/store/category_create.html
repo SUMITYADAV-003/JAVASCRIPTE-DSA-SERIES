@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+{% include 'top_navbar.html' %}
+{% include 'message_box.html' %}
+   <style>
+    .login_form{
+        display: block;
+        margin: auto;
+        width: 20rem;
+    }
+    </style>
+
+    <div class="container">
+        <form action="" method="post" class="login_form">
+            {% csrf_token %}
+
+            {{category_form}}
+            
+            <input class='btn btn-primary' type="submit" value="Create">
+
+        </form>
+
+   </div>
+    
+
+{% endblock body %}

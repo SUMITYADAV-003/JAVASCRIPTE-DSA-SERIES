@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+{% include 'top_navbar.html' %}
+   <style>
+    .login_form{
+        display: block;
+        margin: auto;
+        width: 20rem;
+    }
+    </style>
+
+    <div class="container">
+        <form action="" method="post" class="login_form">
+            {{ login_form.username.label_tag }}
+            <br>
+            {{ login_form.username }}
+            <br>
+            {{ login_form.password.label_tag }}
+            <br>
+            {{ login_form.password }}
+            <br>
+            <input class='btn btn-primary' type="submit" value="Login">
+
+        </form>
+
+   </div>
+    
+
+{% endblock body %}
