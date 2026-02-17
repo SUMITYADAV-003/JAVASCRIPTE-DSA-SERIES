@@ -9,9 +9,36 @@ let prompt = require("prompt-sync")();
 // console.log(FinalAmount); 
  
 //  electi bill
-let unit = Number(prompt("enter Your unit :-"));
-if(unit == 0) return ( (unit * 0).toFixed(1));
-else if(unit > 0 && unit <= 100) console.log((unit * 4.2));
-else if( unit > 101 && unit <= 201 ) console.log((100 * 4.2) + (unit - 100) * 6);
-else if( unit > 201 && unit <= 400 ) console.log((100 * 4.2) + (100  * 6) + (unit - 200) * 8);
-else console.log((100 * 4.2) + (100  * 6) + (200 * 8) + (unit - 400) * 13);
+// let unit = Number(prompt("enter Your unit :-"));
+// if(unit == 0) return ( (unit * 0).toFixed(1));
+// else if(unit > 0 && unit <= 100) console.log((unit * 4.2));
+// else if( unit > 101 && unit <= 201 ) console.log((100 * 4.2) + (unit - 100) * 6);
+// else if( unit > 201 && unit <= 400 ) console.log((100 * 4.2) + (100  * 6) + (unit - 200) * 8);
+// else console.log((100 * 4.2) + (100  * 6) + (200 * 8) + (unit - 400) * 13);
+
+
+// Prime Number :-
+// let n = Number(prompt("Enter  Your Number "));
+// let count = 0;
+// if(n<=1) console.log("Not Prime");
+// else {
+//   for(let i = 2; i<=(n/2); i++){
+//       if(n % i == 0) count ++;
+//    }
+//    if(count == 0) console.log("Prime number");
+//    else console.log(" Not Prime Number");
+// }
+
+
+
+// Prime Number 
+let n = Number(prompt("Enter Your Number :-"));
+let count = 0;
+if(n <= 1) return "Not Prime";
+else {
+  for(let  i = 2; i<=(n/2); i++){
+    if(n % i == 0) count ++;
+  }
+  if(count == 0) return "Prime";
+  else return "Not Prime"
+}
