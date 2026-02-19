@@ -32,13 +32,36 @@ let prompt = require("prompt-sync")();
 
 
 // Prime Number 
-let n = Number(prompt("Enter Your Number :-"));
-let count = 0;
-if(n <= 1) return "Not Prime";
-else {
-  for(let  i = 2; i<=(n/2); i++){
-    if(n % i == 0) count ++;
-  }
-  if(count == 0) return "Prime";
-  else return "Not Prime"
-}
+// let n = Number(prompt("Enter you number "));
+// let count = 0;
+// if(n<=1)console.log("Not Prime ")
+// for(let i = 2; i<(n/2); i++){
+//   if(n % i == 0) count ++;
+  
+// }
+// if(count == 0) console.log("prime number");
+// else console.log("Not prime number :-");
+
+
+// 
+
+// Q 1 :-    Create two variables: one storing your full name and another storing your favorite hobby. Print a sentence in the format:
+  // "My name is <your name> and <your hobby>".
+
+// let FullName = prompt("Enter Your Full name :- ");
+// let Fhobby = prompt("Enter you Hobby :- " );
+// console.log("My name is " + FullName + " and " +  Fhobby);
+// console.log(`My name is  ${FullName} and ${Fhobby}`)
+
+// Q 2 :- Perform the arithmetic calculation `45 * 2 - 10` and print the final result.
+// console.log((45 * 2) - 10);
+
+
+// const date = new Date();
+// console.log(date.getFullYear());
+
+
+// Q 4 Store your first name and last name in two different variables, then print your full name in a single output.
+// let fist = prompt("Enter Your  fist name :-");
+// let last = prompt("Enter Your last name:-");
+// console.log(fist + last);
