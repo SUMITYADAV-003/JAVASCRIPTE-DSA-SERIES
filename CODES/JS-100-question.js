@@ -65,3 +65,92 @@ let prompt = require("prompt-sync")();
 // let fist = prompt("Enter Your  fist name :-");
 // let last = prompt("Enter Your last name:-");
 // console.log(fist + last);
+
+// 5. Create a variable with an initial value. Print its value, update the value, and print the updated value again.
+
+// let a = 5;
+// console.log(a);
+// a = 6;
+// a = 7;
+// console.log(a);
+
+
+// 6. Print a custom error message using `console.error()`.
+console.error();
+
+// 7. Store a number in a variable and print the square of that number.
+
+// let num = 5;
+// console.log(num * num);
+
+// 8. Create a boolean variable and print its value.
+// let isTrue = true;
+// console.log( typeof  isTrue);
+
+// 9. Store your age in a variable and print whether your age is greater than 18.
+
+// let age = Number(prompt("Enter Your Age :-"));
+// if(age >= 18 ) console.log("Age is Greater than 18");
+// else console.log("Age is Not Greater ");
+
+//  10. Divide `100` by `0` and print the result. Observe what JavaScript returns.
+// console.log(100 / 0);
+
+// 11. Create a variable using `let` and print its value.
+
+// let hello = "hello_sumit";
+// console.log(hello);
+
+
+// 12. Declare a constant named `PI` with the value `3.14` and print it.
+// const PI = 3.14;
+// console.log(PI);
+
+// 13. Create a variable, print its value, update the value, and print the updated value again.
+
+
+//14. Print the output of `typeof null` and observe what type JavaScript reports.
+// console.log(typeof null);
+
+// 15. Create a variable containing a numeric value as a string (e.g., `"25"`) and print its type.
+// let num = "25";
+// console.log(typeof num);
+
+
+// 17. Create three variables: a string, a number, and a boolean. Print all of them together in a formatted output.
+// let num = "str";
+// let num1 = true;
+// let num2 = 32;
+
+// console.log(typeof num) ;
+// console.log(typeof num1);
+// console.log(typeof num2);
+
+
+// 18. Declare a variable without assigning a value and print its type using `typeof`.
+
+// let a;
+// console.log(typeof a);
+
+// 19. Create a variable with the value `undefined` and print its type.
+// let num = undefined;
+// console.log(typeof num);
+
+// 20. Create an array using `const`, print it, attempt to reassign the entire array (and handle the error), then modify the existing array by adding a new element and print the updated array.   // Pandiing   
+
+
+
+// 21. Write a program that prints the numbers from 1 to 50 using a `for` loop.
+// for(let i = 1; i<=50; i++){
+//   console.log(i);
+// }
+
+
+// 22. Using a `while` loop, calculate and print the sum of numbers from 1 to 10.
+// let i = 1;
+// while(i<=50) {
+//   console.log(i);
+//   i++;
+// }
+
+// 23. Iterate through each character of the string `"JavaScript"` using a `for...of` loop and print each character.
