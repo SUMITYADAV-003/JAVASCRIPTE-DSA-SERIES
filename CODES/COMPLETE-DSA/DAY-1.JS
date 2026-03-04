@@ -43,7 +43,7 @@ let prompt = require("prompt-sync")();
 //   }
 // }
 
-// Rever  a give numbar .
+// Rever  a give numbar.
 
 // let n = Number(prompt("Enter Your Number :-"));
 // let rev = 0;
@@ -55,28 +55,38 @@ let prompt = require("prompt-sync")();
 // console.log(rev);
 
 
-/*Write a program to find and print all the prime factors of a given number. A prime
-factor is a factor that is a prime number. If the number is O or 1, print No prime
-factors.
+/* Write a program to find and print all the prime factors of a given number. A prime
+   factor is a factor that is a prime number. If the number is O or 1, print No prime
+   factors.
 */
 
 
 
-let num = Number(prompt("Enter your number:"));
+// class Solution {
+//   prime_factors(n) {
+//     if (n === 0 || n === 1) {
+//       return "No prime factors";
+//     }
+//     let result = [];
+//     for (let i = 2; i * i <= n; i++) {
+//       while (n % i === 0) {
+//         result.push(i);
+//         n = n / i;
+//       }
+//     }
+//     if (n > 1) {
+//       result.push(n);
+//     }
+//     return result.join("\n");
+//   }
+// }
+// module.exports = Solution;
 
-if (num === 0 || num === 1) {
-  console.log("No prime factors");
-} else {
-  for (let i = 2; i * i <= num; i++) {
-    while (num % i === 0) {
-      console.log(i);
-      num = num / i;
-    }
-  }
 
-  if (num > 1) {
-    console.log(num);
-  }
-}
+// Write a Java program that checks if a given number is a Neon number. A Neon
+// number is a number where the sum of the digits of the square of the number is
+// equal to the number itself.
+
+
 
 
