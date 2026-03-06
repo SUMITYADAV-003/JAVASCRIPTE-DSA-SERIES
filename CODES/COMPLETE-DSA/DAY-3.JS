@@ -68,17 +68,58 @@ let prompt = require("prompt-sync")();
 
 // find second smax
 
-let arr = [10,20,3,300,80];
-let max = Math.max(arr[0], arr[1]);
-let smax = Math.min(arr[0], arr[1]);
+// let arr = [10,20,3,300,80];
+// let max = Math.max(arr[0], arr[1]);
+// let smax = Math.min(arr[0], arr[1]);
+
+// for(let i = 0; i<arr.length; i++){
+//   if(arr[i] > max){
+//     smax = max
+//     max = arr[i];
+//   } else if(arr[i] > smax && arr[i] != max){
+//     smax = arr[i];
+//   }
+  
+// }
+// console.log(smax);
+
+// let arr = [0,20,2,0,3,6];
+// let temp = new Array(arr.length);
+
+// let i = arr.length-1;
+
+// for(let j = 0; j<temp.length; j++){
+//   temp[j] = arr[i];
+//   i--;
+// }
+
+// console.log(temp);
+
+
+// let arr = [20,30,50,60,40];
+// let i = 0; 
+// let j = arr.length -1;
+// while(i<j){
+//   let temp = arr[i];
+//   arr[i] = arr[j];
+//   arr[j] = temp;
+//   i++;
+//   j--;
+// }
+// console.log(arr);
+
+
+
+// max element 
+
+
+let arr = [30,20,50];
+let max = arr[0];
 
 for(let i = 0; i<arr.length; i++){
   if(arr[i] > max){
-    smax = max
     max = arr[i];
-  } else if(arr[i] > smax && arr[i] != max){
-    smax = arr[i];
   }
-  
 }
-console.log(smax);
+
+console.log(max);
