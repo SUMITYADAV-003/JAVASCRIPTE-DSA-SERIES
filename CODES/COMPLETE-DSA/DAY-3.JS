@@ -113,13 +113,63 @@ let prompt = require("prompt-sync")();
 // max element 
 
 
-let arr = [30,20,50];
-let max = arr[0];
+// let arr = [30,20,50];
+// let max = arr[0];
 
-for(let i = 0; i<arr.length; i++){
-  if(arr[i] > max){
-    max = arr[i];
+// for(let i = 0; i<arr.length; i++){
+//   if(arr[i] > max){
+//     max = arr[i];
+//   }
+// }
+
+// console.log(max);
+
+
+
+// let temp = new Array(arr.length);
+// let i = arr.length-1;
+// for(let j = 0; j<arr.length; j++){
+//   temp[j]  = arr[i];
+//   i--;
+// }
+
+// console.log(temp);
+
+
+
+// let arr = [50,10,20,30,50];
+// let i = 0;
+// let j  = arr.length-1;
+
+// while(i<j){
+//   let temp = arr[i];
+//   arr[i] = arr[j];
+//   arr[j] = temp;
+//   i++;
+//   j--;
+// }
+
+// console.log(arr);
+
+
+
+
+
+
+let arr = [0,1,0,1,1,0,1];
+let i = 0; 
+let j = arr.length - 1; // ✅ fix: -1
+
+while(i < j) {
+  if(arr[i] === 0) {
+    // swap
+    let temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+    j--; // move j left
+  } else {
+    i++; // ✅ only move i forward when arr[i] is 1
   }
 }
 
-console.log(max);
+console.log(arr)
