@@ -33,11 +33,37 @@ let prompt = require("prompt-sync")();
 // }
 
 
+//  SEARCHING ALRORITHMS
+// let arr = [4,5,6,7,8,9];
+// let t = Number(prompt("Enter search Element :-"));
+// let indexs = -1;
+// for(let i = 0; i<=arr.length; i++){
+//     if(arr[i] === t){
+//       indexs = i;
+//     }
+// }
+
+// console.log(indexs == -1? "Not found": "found at " + indexs + " index" + " element is :"   + arr[indexs]);
 
 
-let arr = [5,9,6];
-for(let i = 0; i<arr.length; i++){
-  
+
+
+//   BINNERY SEARCH 
+
+let arr = [4,6,8,9,10,22,55,74,85];
+let t = Number(prompt("Enter a search Element :- "));
+let st = 0, en = arr.length-1, index = -1;
+
+
+while(st <= en){
+  let mid = Math.floor((st + en) /2);
+  if(arr[mid] == t){
+    index = mid;
+    break;
+  }
+  else if(arr[mid] < t) st = mid + 1;
+  else en = mid - 1; 
 }
 
-console.log(arr);
+if(index == -1) console.log(" Not Found");
+else console.log("Element found At " + index + " indexs");
