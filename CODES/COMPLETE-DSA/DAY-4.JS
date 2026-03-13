@@ -50,20 +50,39 @@ let prompt = require("prompt-sync")();
 
 //   BINNERY SEARCH 
 
-let arr = [4,6,8,9,10,22,55,74,85];
-let t = Number(prompt("Enter a search Element :- "));
+// let arr = [4,6,8,9,10,22,55,74,85];
+// let t = Number(prompt("Enter a search Element :- "));
+// let st = 0, en = arr.length-1, index = -1;
+
+
+// while(st <= en){
+//   let mid = Math.floor((st + en) /2);
+//   if(arr[mid] == t){
+//     index = mid;
+//     break;
+//   }
+//   else if(arr[mid] < t) st = mid + 1;
+//   else en = mid - 1; 
+// }
+
+// if(index == -1) console.log(" Not Found");
+// else console.log("Element found At " + index + " indexs");
+
+
+
+let arr = [4,5,6,9,7,3,6,5,6,8];
+let targat = Number(prompt("Enter a Search Element :-"));
 let st = 0, en = arr.length-1, index = -1;
 
 
-while(st <= en){
-  let mid = Math.floor((st + en) /2);
-  if(arr[mid] == t){
+while(st< en){
+  let mid = Math.floor((st + en) /2 );
+  if(arr[mid] == targat){
     index = mid;
     break;
-  }
-  else if(arr[mid] < t) st = mid + 1;
-  else en = mid - 1; 
+  }else if(arr[mid] < targat) st = mid + 1;
+  else en = mid - 1;
 }
 
-if(index == -1) console.log(" Not Found");
+if(index == -1) console.log('Not Found ');
 else console.log("Element found At " + index + " indexs");
