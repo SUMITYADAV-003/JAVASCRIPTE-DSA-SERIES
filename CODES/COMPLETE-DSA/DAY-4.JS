@@ -70,19 +70,62 @@ let prompt = require("prompt-sync")();
 
 
 
-let arr = [4,5,6,9,7,3,6,5,6,8];
-let targat = Number(prompt("Enter a Search Element :-"));
-let st = 0, en = arr.length-1, index = -1;
+// let arr = [4,5,6,9,7,3,6,5,6,8];
+// let targat = Number(prompt("Enter a Search Element :-"));
+// let st = 0, en = arr.length-1, index = -1;
 
 
-while(st< en){
-  let mid = Math.floor((st + en) /2 );
-  if(arr[mid] == targat){
+// while(st< en){
+//   let mid = Math.floor((st + en) /2 );
+//   if(arr[mid] == targat){
+//     index = mid;
+//     break;
+//   }else if(arr[mid] < targat) st = mid + 1;
+//   else en = mid - 1;
+// }
+
+// if(index == -1) console.log('Not Found ');
+// else console.log("Element found At " + index + " indexs");
+
+
+
+
+// let num = Number(prompt("Enter Your Number :-"));
+// let sum = 0, sqr = num * num;
+// let temp = sqr;
+// while(temp > 0){
+//   let rem = (temp % 10);
+//   sum  += rem;
+//   temp = Math.floor(temp/10);
+
+// }
+// if(sum === num) console.log("nean number");
+// else console.log("not nean number ");
+
+
+// Find the Targate
+// let arr = [7,9,5,2,8,1,1];
+// let t = Number(prompt("Enter Your Number :-"));
+// let index = -1;
+// for(let i = 0; i<arr.length; i++){
+//   if(arr[i] === t) {
+//     index = i;
+//     break;
+//   }
+// }
+
+// console.log(index == -1 ? "Not Found": "Found at " + index + " Index");
+
+let arr = [4,5,6,7,8,9,10,11];
+let t = Number(prompt("Enter Your Number"));
+let st = 0; let end = arr.length-1; index = -1;
+while(st <= end){
+  let mid = Math.floor((st + end) / 2);
+  if(arr[mid] === t){
     index = mid;
     break;
-  }else if(arr[mid] < targat) st = mid + 1;
-  else en = mid - 1;
+  }
+  else if(arr[mid] < t) st = mid + 1;
+  else end = mid - 1;
 }
-
-if(index == -1) console.log('Not Found ');
-else console.log("Element found At " + index + " indexs");
+console.log(index);
