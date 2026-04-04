@@ -41,7 +41,7 @@ let prompt = require("prompt-sync")();
 
 // console.log(count);
 
-let password = Number(prompt("Enter your password"));
-let hardcodepassword = 123456;
-if(password === hardcodepassword) console.log("Your password was correct ");
-else console.log("password not correct ");
+// let password = Number(prompt("Enter your password"));
+// let hardcodepassword = 123456;
+// if(password === hardcodepassword) console.log("Your password was correct ");
+// else console.log("password not correct ");
