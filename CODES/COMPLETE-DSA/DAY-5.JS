@@ -14,34 +14,30 @@
 // 11. Allow only 3 attempts to enter correct password
 // If user gets it right early, stop. If not → “Account locked”
 
-
-// 1 Answer
 let prompt = require("prompt-sync")();
+// 1 Answer
+let password = 12365;
+let attempts = 3;
 
-// let age =  Number(prompt("Enter Your Age :-"));
-// if(age >= 18 ) console.log("Elogibale for Vote :");
-// else console.log("not Elogibale");
+while(attempts > 0){
+  const userInput = Number(prompt("Enter Your Password :-"));
+  if(password === userInput){
+    console.log("your password maced login ");
+    break;
+  }
+  else {
+    attempts --;
+    if(attempts > 0) {
+      console.log(`Wrong password! ${attempts} attempt(s) remaining.`)
+    }
+  }
+}
 
-// 2 Answer
-// let num = Number(prompt("Enter Your Number  for Printing table:-"));
-
-// for(let i = 1; i<=10; i++){
-//   let multi = num * i;
-//   console.log(num + " * " + i + " = " + multi );
-// }
+if(attempts === 0) console.log("password not mached Your account locked :-");
 
 
-// let count = 0;
-// for(let i = 1; i<=15; i++){
-  
-//   if(i > 7) 
-//   count ++;
-  
-// }
 
-// console.log(count);
 
-// let password = Number(prompt("Enter your password"));
-// let hardcodepassword = 123456;
-// if(password === hardcodepassword) console.log("Your password was correct ");
-// else console.log("password not correct ");
+
+
+
