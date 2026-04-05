@@ -16,24 +16,40 @@
 
 let prompt = require("prompt-sync")();
 // 1 Answer
-let password = 12365;
-let attempts = 3;
+// let password = 12365;
+// let attempts = 3;
 
-while(attempts > 0){
-  const userInput = Number(prompt("Enter Your Password :-"));
-  if(password === userInput){
-    console.log("your password maced login ");
-    break;
-  }
-  else {
-    attempts --;
-    if(attempts > 0) {
-      console.log(`Wrong password! ${attempts} attempt(s) remaining.`)
-    }
-  }
-}
+// while(attempts > 0){
+//   const userInput = Number(prompt("Enter Your Password :-"));
+//   if(password === userInput){
+//     console.log("your password maced login ");
+//     break;
+//   }
+//   else {
+//     attempts --;
+//     if(attempts > 0) {
+//       console.log(`Wrong password! ${attempts} attempt(s) remaining.`)
+//     }
+//   }
+// }
 
-if(attempts === 0) console.log("password not mached Your account locked :-");
+// if(attempts === 0) console.log("password not mached Your account locked :-");
+
+
+// 12. Ask user for words until they type “stop”. Count how many times they typed “yes”
+// Loop until "stop" is typed. Count "yes".
+
+// let count = 0;
+// while(true) {
+//   let word = prompt("Enter Your worrd :-");
+//   if(word == "stop") {
+//     console.log(" stop");
+//     break;
+//   }
+//   if(word == "yes") {
+//     count ++;
+//   }
+// }
 
 
 
