@@ -1,7 +1,7 @@
 // 1. Create two variables: one storing your full name and another storing your favorite hobby. Print a sentence in the format:
 //   "My name is <your name> and <your hobby>".
 
-// let prompt = require("prompt-sync")();
+let prompt = require("prompt-sync")();
 
 // let Name = prompt("Enter Your Name :-");
 // let Hobby = prompt("Enter Your Hobby :-");
@@ -31,4 +31,15 @@
 // console.log(a);
 
 // 6. Print a custom error message using `console.error()`.
-console.error("This is the custom message error :");
+// console.error("This is the custom message error :");
+
+// 7. Store a number in a variable and print the square of that number.
+// let num = Number(prompt("Enter  Your Number :-"));
+
+// console.log(num * num);
+
+// 9. Store your age in a variable and print whether your age is greater than 18.
+
+let age = Number(prompt("Enter you age :-"));
+if(age >= 18) console.log("You are elegible for vote");
+else console.log("your are not elegible for vote");
