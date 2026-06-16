@@ -40,6 +40,25 @@ let prompt = require("prompt-sync")();
 
 // 9. Store your age in a variable and print whether your age is greater than 18.
 
-let age = Number(prompt("Enter you age :-"));
-if(age >= 18) console.log("You are elegible for vote");
-else console.log("your are not elegible for vote");
+// let age = Number(prompt("Enter you age :-"));
+// if(age >= 18) console.log("You are elegible for vote");
+// else console.log("your are not elegible for vote");
+
+
+// 10. Divide `100` by `0` and print the result. Observe what JavaScript returns.
+
+// console.log(" hello  " + 100/0);
+
+// ## Variables and Data types
+
+// 11. Create a variable using `let` and print its value.
+
+// 12. Declare a constant named `PI` with the value `3.14` and print it.
+
+// 13. Create a variable, print its value, update the value, and print the updated value again.
+
+// let a   = 10
+// console.log(a);
+
+const PI = Math.PI;
+console.log(PI);
