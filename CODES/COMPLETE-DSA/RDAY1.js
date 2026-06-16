@@ -60,5 +60,16 @@ let prompt = require("prompt-sync")();
 // let a   = 10
 // console.log(a);
 
-const PI = Math.PI;
-console.log(PI);
+// const PI = Math.PI;
+// console.log(PI);
+
+
+// 14. Print the output of `typeof null` and observe what type JavaScript reports.
+
+// 15. Create a variable containing a numeric value as a string (e.g., `"25"`) and print its type.
+
+let a = 10;
+let b = "HEllo";
+
+console.log(typeof a);
+console.log(typeof b);
